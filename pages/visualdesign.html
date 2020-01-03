@@ -1,0 +1,128 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Visual Design</title>
+<link  href="../css/style.css" rel="stylesheet">
+</head>
+    
+<header>
+    <div class="container">
+      <h1 class="logo"></h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Back</a></li>
+          <li><a href="../index.html">Portfolio</a></li>
+          <li><a href="../pages/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
+<body>    
+    
+   
+    <center>
+    <div class="visualdesign">
+    </div>
+    </center>
+    
+    
+<center>
+    <div class="visualframe">
+    <div class="row">
+  <div class="column">
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/P3_abstraction.png" alt="Objects and 3 Abstractions" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/Places-collage.jpg" alt="Union Square: Drawing and Collage" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/super-mario-map.jpg" alt="Super Mario Map: Drawing, Collage and Graphic" style="width:100%"> 
+        <a href="../pages/cookbook.html">
+        <img src="../images/portfolio/Graphic/IMG_1344.jpeg" alt="Typography and Visual Design: Cooking Book" style="width:100%"> 
+        </a>
+        <a href="../pages/foundalphabet.html">
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/IMG_1336.jpeg" alt="Typography and Visual Design: Found Alphabet" style="width:100%"> 
+        </a>
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/pickle-01.jpg" alt="Typography and Visual Design: Pickle Label" style="width:100%">
+    <div id="myModal" class="modal">
+      <span class="close">x</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+      </div>
+        
+        
+          <div class="column">
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/postcard2.png" alt="Sustainable Postcard Design: Sinking City" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/postcard3.png" alt="Sustainable Postcard Design: Hudson River" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/postcard4.png" alt="Sustainable Postcard Design: City on Fire" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/postcard1.png" alt="Sustainable Postcard Design: East River" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/IMG_1347.jpeg" alt="Typography and Visual Design: Psychological Map" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/album-01.jpg" alt="Typography and Visual Design: Album" style="width:100%">
+    <div id="myModal" class="modal">
+      <span class="close">x</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+      </div>
+        
+        
+        
+                  <div class="column">
+        <img class="myImages" id="myImg" src="../images/portfolio/Space/caged-bird.jpg" alt="Space and Materiality: Caged Bird" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/Space/owl-flight-motion.jpg" alt="Space and Materiality: Owl Flight Motion" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/Space/rabbit-warrior.png" alt="Space and Materiality: Rabbit Warrior" style="width:100%"> 
+        <img class="myImages" id="myImg" src="../images/portfolio/Space/two-cubes.jpg" alt="2 cubes" style="width:100%">   
+        <img class="myImages" id="myImg" src="../images/portfolio/Graphic/CTD_Poster.jpg" alt="Typography and Visual Design: Poster" style="width:100%">   
+
+    <div id="myModal" class="modal">
+      <span class="close">x</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+      </div>
+        
+    
+</div>
+</div>
+</center>
+
+    
+
+  
+    
+   
+        
+<center>
+    <footer>
+        Posted by: Jing Dong  |  email: dongj340@newschool.edu
+    </footer>
+</center>
+
+<script>
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+        
+</body>
+</html>

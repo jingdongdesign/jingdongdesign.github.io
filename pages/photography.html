@@ -1,0 +1,129 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Photography</title>
+<link  href="../css/style.css" rel="stylesheet">
+</head>
+    
+<header>
+    <div class="container">
+      <h1 class="logo"></h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Back</a></li>
+          <li><a href="../index.html">Portfolio</a></li>
+          <li><a href="../pages/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
+<body>    
+    
+   
+    <center>
+    <div class="photography">
+    </div>
+    </center>
+    
+    
+<center>
+    <div class="visualframe">
+    <div class="row">
+  <div class="column">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo1.jpg" alt="Street View: 14th Street" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo2.jpg" alt="Yuhan" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo3.jpg" alt="Street View, Cooper Union" style="width:100%"> 
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo4.jpg" alt="Street View, 5th Ave" style="width:100%"> 
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo5.jpg" alt="Sanija" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo6.jpg" alt="Something Strange" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo7.jpg" alt="Two Women, Union Square Park" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo14.jpg" alt="On the Train" style="width:100%">
+    <div id="myModal" class="modal">
+      <span class="close">x</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+      </div>
+        
+        
+          <div class="column">
+
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo8.jpg" alt="Street Artist, Washington Sqaure Park" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo9.jpg" alt="Self Portrait +  Window + NYC Night View" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo10.png" alt="Self Portrait" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo11.jpg" alt="Street View, Union Square Part" style="width:100%"> 
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo12.jpg" alt="The New School" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo13.png" alt="34th Street, NY" style="width:100%">
+    <div id="myModal" class="modal">
+      <span class="close">x</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+      </div>
+        
+        
+        
+         <div class="column">
+
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo16.jpg" alt="Ferris Wheel, Coney Island" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo17.jpg" alt="Coney Island" style="width:100%"> 
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo18.jpg" alt="Environment: My Dorm" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo19.png"alt="Environment: Sunset" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo20.jpg" alt="Kids, Union Square Park" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo21.jpg" alt="Old Lady, Union Square Park" style="width:100%">
+        <img class="myImages" id="myImg" src="../images/portfolio/photography/photo15.jpg" alt="Cat, Backyard" style="width:100%">
+    <div id="myModal" class="modal">
+      <span class="close">x</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+      </div>
+        
+    
+</div>
+</div>
+</center>
+
+    
+
+  
+    
+   
+        
+<center>
+    <footer>
+        Posted by: Jing Dong  |  email: dongj340@newschool.edu
+    </footer>
+</center>
+
+<script>
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+        
+</body>
+</html>
