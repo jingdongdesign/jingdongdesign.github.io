@@ -5,18 +5,25 @@ body {
 	font-weight: 200;
 }
 
-@font-face{
-    font-family:'Bauhaus';
-    src:url(fonts/Bauhaus.ttf);
-    font-style: normal;
-    font-weight:200;
-     font-family: 'Bauhaus';
- src: url('fonts/Bauhaus.eot');
- src: local('Bauhaus'), 
-              url('font/Bauhaus.woff') format('woff'), 
-              url('font/Bauhaus.ttf') format('truetype'), 
-              url('font/Bauhaus.ttf.svg') format('svg');
-}
+@font-face {  
+ font-family: "Bauhaus";  
+ src: url("font/Bauhaus.eot") /* EOT file for IE */  
+}  
+
+@font-face {  
+ font-family: "Bauhaus";  
+ src: url("font/Bauhaus.woff") /* EOT file for IE */  
+} 
+
+@font-face {  
+ font-family: "Bauhaus";  
+ src: url("font/Bauhaus.svg") /* EOT file for IE */  
+} 
+
+@font-face {  
+ font-family: "Bauhaus";  
+ src: url("font/Bauhaus.ttf") /* EOT file for IE */  
+} 
 
 .container {
 	width: 100%;
