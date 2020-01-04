@@ -7,9 +7,15 @@ body {
 
 @font-face{
     font-family:'Bauhaus';
-    src:url(fonts/Bauhaus_.ttf);
+    src:url(fonts/Bauhaus.ttf);
     font-style: normal;
     font-weight:200;
+     font-family: 'Bauhaus';
+ src: url('fonts/Bauhaus.eot');
+ src: local('Bauhaus'), 
+              url('font/Bauhaus.woff') format('woff'), 
+              url('font/Bauhaus.ttf') format('truetype'), 
+              url('font/Bauhaus.ttf.svg') format('svg');
 }
 
 .container {
