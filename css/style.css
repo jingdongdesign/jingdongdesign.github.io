@@ -61,36 +61,24 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+/*  list-style: none;*/
 }
 
 
 nav li {
   display: inline-block;
   margin-left: 20px;
-    margin-right: 70px;
+  margin-right: 70px;
   padding-top: 20px;
   position: relative;
 }
 
-nav a {
-  color: #23679e;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 22px;
-}
-
-
-
-nav a:hover {
-  color: #619ef8;
-}
 
 nav a::before {
   content: '';
   display: block;
   height: 5px;
-  background-color: #619ef8;
+  background-color: #23679e;
 
   position: absolute;
   top: 0;
@@ -165,35 +153,8 @@ margin-top: -170px;
   background-size: contain;
 }
 
-.skill{
-margin-top: -170px;
-  width: 20%;
-    height:70px;
-  background-image: url('../images/background/elements-05.png');
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
-.awards{
-margin-top: 500px;
-  width: 20%;
-    height:70px;
-  background-image: url('../images/background/elements-17.png');
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
-.experience{
-margin-top: 0px;
-  width: 20%;
-    height:70px;
-  background-image: url('../images/background/elements-06.png');
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
 .visualdesign{
 margin-top: 150px;
@@ -260,31 +221,6 @@ margin-top: 150px;
     margin-left: 3%;
 }
 
-.skillset{
-    margin-top: 0px;
-  width: 80%;
-  height: 330px;
-  background-image: url('../images/background/skill-01.png');
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-    text-align: center;
-}
-
-.experiencetext{
-    margin-top: 0px;
-  width: 80%;
-  height: 330px;
-    text-align:left;
-}
-
-.awardstext{
-    margin-top: -100px;
-  width: 80%;
-  height: 330px;
-    text-align:left;
-}
-
 
 
 
@@ -305,7 +241,7 @@ margin-top: 150px;
 
 .waffle{
     margin-top: 80px;
-    margin-left: 86%;
+    margin-left: 80%;
     max-width: 200px;
     height:200px;
 }
@@ -315,29 +251,39 @@ filter: hue-rotate(150deg);
 }
 
 
-
-.doodle{
-    margin-top: 0px;
+.waffle2{
+    margin-top:-2200px;
     margin-left: 86%;
     max-width: 200px;
     height:200px;
 }
 
-.doodle:hover{
-    filter: drop-shadow(16px 16px 1px #23679e);
+.waffle2:hover{
+filter: hue-rotate(150deg);
 }
 
-.doodle2{
+
+.doodle{
     margin-top: 150px;
     margin-left: 5%;
     max-width: 180px;
     height:180px;
 }
 
-.doodle2:hover{
-    filter: drop-shadow(16px 16px 1px #23679e);
+.doodle:hover{
+    filter: drop-shadow(16px 16px 1px white);
 }
 
+.raindrop2{
+    margin-top: -2500px;
+    margin-left: 10%;
+    max-width: 160px;
+    height:160px;
+}
+
+.raindrop2:hover{
+    filter: drop-shadow(16px 16px 1px white);
+}
 
 .raindrop{
     margin-top: 0px;
@@ -363,8 +309,12 @@ filter: hue-rotate(150deg);
 }
 
 
+.topblank{
+    margin-top: 180px;
+}
+
 .butterfly2{
-    margin-top: 0px;
+    margin-top: -1400px;
     margin-left: 5%;
     max-width: 160px;
     height:160px;
@@ -375,6 +325,17 @@ filter: hue-rotate(150deg);
   transform: scaleX(-1);
 }
 
+.butterfly3{
+    margin-top: -900px;
+    margin-left: 86%;
+    max-width: 160px;
+    height:160px;
+}
+
+.butterfly3:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 
 .zoomin figure img {
        margin-top: 100px;
@@ -394,8 +355,8 @@ filter: hue-rotate(150deg);
 }
 
 .zoomin2 figure img {
-    margin-top: 0px;
-    margin-left: 8%;
+    margin-top: -200px;
+    margin-left: 30%;
     max-width: 160px;
     height:auto;
 	-webkit-transform: rotate(15deg) scale(1.4);
@@ -486,9 +447,9 @@ margin-left: 10%;
 
 
 .intro{
-    width:180%;
+    width:100%;
     text-align: left;
-    margin-left: -39%;
+    margin-left: 0%;
 }
 
 
@@ -504,25 +465,16 @@ margin-left: 10%;
 
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
 }
 
 .modal-content {
